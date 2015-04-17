@@ -1,0 +1,12 @@
+<template>
+  <section>
+      <h2>${heading}</h2>
+      <div class="ui grid">
+        <div class="four wide column" repeat.for="image of images">
+          <a class="thumbnail">
+            <img class="ui fluid image" style="width: 260px; height: 180px;" src.bind="image.media.m"/>
+          </a>
+        </div>
+      </div>
+  </section>
+</template>
